@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_min">8dp</dimen>
+
+    <!-- cobrosapp added    -->
+    <dimen name="pagos_icons">50dp</dimen>
+    <dimen name="pagos_text_size">14sp</dimen>
+    <dimen name="text_label_min">10sp</dimen>
+    <dimen name="text_label_med">18sp</dimen>
+
+
+
+    <!--LAYOUT DETALLES DE FACTURACION-->
+    <dimen name="detalle_factura_card_h">150dp</dimen>
+
+    <!--FLOATING BUTTON MARGIN G-->
+    <dimen name="floating_button_margin">30dp</dimen>
+
+
+
+    <!--DEFAULT PRINTER LAYOUT-->
+    <dimen name="default_printer_card_w">200dp</dimen>
+    <dimen name="default_printer_card_h">225dp</dimen>
+    <dimen name="default_printer_icons">30dp</dimen>
+    <dimen name="default_printer_printer_icon">100dp</dimen>
+    <dimen name="default_printer_nametext">14sp</dimen>
+    <dimen name="default_printer_defaulttext">12sp</dimen>
+
+    <!--DEFAULT PRINTER ITEM-->
+    <dimen name="item_printer_card_w">190dp</dimen>
+    <dimen name="item_printer_card_h">200dp</dimen>
+    <dimen name="item_printer_icons">30dp</dimen>
+    <dimen name="item_printer_printer_icon">80dp</dimen>
+    <dimen name="item_printer_nametext">14sp</dimen>
+    <dimen name="item_printer_defaulttext">12sp</dimen>
+</resources>

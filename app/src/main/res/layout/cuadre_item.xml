@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:layout_marginVertical="2dp"
+    android:id="@+id/cvCuadre">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tvIndiceCuad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:textSize="@dimen/text_label_med"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:text="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/lblReciboCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="8dp"
+             android:text="Recibo"
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_min"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/tvReciboCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:text=""
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_med"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/lblReciboCuad" />
+
+         <TextView
+             android:id="@+id/lblContCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="8dp"
+             android:text="Contrato"
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_min"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/tvFechaCuad" />
+
+         <TextView
+             android:id="@+id/tvContCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginBottom="8dp"
+             android:text=""
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_med"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/lblContCuad" />
+
+         <TextView
+             android:id="@+id/lblFechaCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:layout_marginEnd="8dp"
+             android:text="Fecha"
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_min"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/tvFechaCuad"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="16dp"
+             android:layout_marginEnd="8dp"
+             android:text=""
+             android:textAlignment="textEnd"
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_med"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="1.0"
+             app:layout_constraintStart_toEndOf="@+id/tvReciboCuad"
+             app:layout_constraintTop_toBottomOf="@+id/lblFechaCuad" />
+
+         <TextView
+             android:id="@+id/lblMontoCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="8dp"
+             android:text="Monto"
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_min"
+             app:layout_constraintBaseline_toBaselineOf="@+id/lblContCuad"
+             app:layout_constraintEnd_toEndOf="parent" />
+
+         <TextView
+             android:id="@+id/tvMontoCuad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginEnd="8dp"
+             android:layout_marginBottom="8dp"
+             android:text=""
+             android:textColor="@color/primary_text"
+             android:textSize="@dimen/text_label_med"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="1.0"
+             app:layout_constraintStart_toEndOf="@+id/tvContCuad"
+             app:layout_constraintTop_toBottomOf="@+id/lblMontoCuad" />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

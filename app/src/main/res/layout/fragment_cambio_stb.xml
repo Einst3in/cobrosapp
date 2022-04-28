@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cambioStb.cambio.CambioStbFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCantStbCambioDisponibles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="@dimen/text_label_med"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toBottomOf="@+id/lblCantCambioStb"
+            app:layout_constraintStart_toEndOf="@+id/lblCantCambioStb"
+            app:layout_constraintTop_toTopOf="@+id/lblCantCambioStb" />
+
+        <TextView
+            android:id="@+id/lblCantCambioStb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/text_label_med"
+            android:textColor="@color/primary_text"
+            android:text="@string/cambio_stb_cant_disponible"
+            app:layout_constraintStart_toStartOf="@+id/spCambioStb"
+            app:layout_constraintTop_toBottomOf="@+id/spCambioStb" />
+
+        <ProgressBar
+            android:id="@+id/pBarCambioStb"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblCambiarStb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/cambio_stb_por"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/cambio_stb_total"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPrecioCambioStb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintBottom_toBottomOf="@+id/textView34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStbCambio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCantCambioStb">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Spinner
+            android:id="@+id/spCambioStb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblCambiarStb"
+            app:layout_constraintTop_toBottomOf="@+id/lblCambiarStb" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

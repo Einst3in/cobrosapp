@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp">
+
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/rGroupRuta"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accion"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            android:gravity="center" />
+
+    </RadioGroup>
+    <ProgressBar
+        android:id="@+id/pBarVisitaRuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/text_label_med"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancelar"
+        android:background="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColor="@color/accent"/>
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/common_google_signin_btn_text_dark_pressed"
+        android:text="Aceptar"
+        android:textColor="@color/accent"/>
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.traslado.TrasladoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbDireccionActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Direccion Actual"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDireccionActual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/primary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbDireccionActual" />
+
+        <TextView
+            android:id="@+id/lbNuevaDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Nueva Direccion"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDireccionActual" />
+
+        <ProgressBar
+            android:id="@+id/pBarTraslados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Ciudad-->
+        <LinearLayout
+            android:id="@+id/lLayoutCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbNuevaDireccion">
+
+            <TextView
+                android:id="@+id/lbCiudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad"
+                android:textColor="@color/primary_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <Spinner
+                    android:id="@+id/spCiudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/ivRefCiudad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.1"
+                    app:srcCompat="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Sector-->
+        <LinearLayout
+            android:id="@+id/lLayoutSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutCiudad">
+
+            <TextView
+                android:id="@+id/lbSector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sector"
+                android:textColor="@color/primary_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spSector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/ivRefSector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.1"
+                    app:srcCompat="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Calle-->
+        <LinearLayout
+            android:id="@+id/lLayoutCalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutSector">
+
+            <TextView
+                android:id="@+id/lblCalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calle"
+                android:textColor="@color/primary_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spCalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/ivRefCalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.1"
+                    app:srcCompat="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--CheckLayout-->
+        <LinearLayout
+            android:id="@+id/lLayoutCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutCalle">
+
+            <CheckBox
+                android:id="@+id/chkEsquina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Esquina" />
+
+            <CheckBox
+                android:id="@+id/chkEdificio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Edificio" />
+        </LinearLayout>
+
+        <!--Esquina-->
+        <LinearLayout
+            android:id="@+id/lLayoutEsquina"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutCheck">
+
+            <TextView
+                android:id="@+id/lbEsquina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esquina"
+                app:layout_constraintStart_toStartOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spEsquina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/ivRefEsquina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.1"
+                    app:srcCompat="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Edificio-->
+        <LinearLayout
+            android:id="@+id/lLayoutEdificio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutEsquina">
+
+            <TextView
+                android:id="@+id/lbEdificio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edificio" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spEdificio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/ivRefEdificio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.1"
+                    app:srcCompat="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Casa-->
+        <LinearLayout
+            android:id="@+id/lLayoutCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutEdificio">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/lblCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/primary_text"
+                    android:text="#Casa" />
+
+                <EditText
+                    android:id="@+id/etCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,-,A,B,C,D,E"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/lblApartamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/primary_text"
+                    android:text="#Apartamento" />
+
+                <EditText
+                    android:id="@+id/etApartamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,-,A,B,C,D,E"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="7" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Referencia-->
+        <LinearLayout
+            android:id="@+id/lLayoutReferencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutCasa"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/lbReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/primary_text"
+                android:text="Referencia"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/etReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="200"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLayoutHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutReferencia">
+
+            <TextView
+                android:id="@+id/lblHorario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horario"
+                android:textColor="@color/primary_text" />
+
+            <Spinner
+                android:id="@+id/spHorarioTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

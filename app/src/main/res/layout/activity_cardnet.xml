@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cardnet.CardnetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fevziomurtekin.payview.Payview
+            android:id="@+id/payview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBgColor="@android:color/holo_green_light"
+            app:cardFgColor="@android:color/white"
+            app:cardTextColor="@color/black"
+            app:cardNameHelperText="Nombre de la Tarjeta. Max 25 caracteres."
+            app:cardCvTextSize="14"
+            app:cardNoTextSize="14"
+            app:cardNumberHelperText="Debes poner los 16-digitos de la tarjeta."
+            app:cardYearTextSize="13"
+            app:cardNameTextSize="15"
+            app:cardMonthTextSize="13"
+            app:cardAnimationType="vertical"
+            app:cardCvErrorText="You must enter 3-digit characters"
+            app:cardMonthErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '12'"
+            app:cardYearErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '99'"
+            app:cardExpiredErrorText="Your card has expired. Please enter the usage date correctly."
+            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hola Desde el cardnet activity"/>-->
+
+<!--        <WebView-->
+<!--            android:id="@+id/wb_webview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--        </WebView>-->
+
+    </LinearLayout>
+
+
+    <!--    <ProgressBar-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:id="@+id/progressBarCardnet"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:gravity="center"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarCardnet"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

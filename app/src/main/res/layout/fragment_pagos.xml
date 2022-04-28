@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.operaciones.tabs.pagosTab.PagosFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/flPagoMens"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ibPagoMens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_cobro" />
+
+                <TextView
+                    android:id="@+id/lblPagoMens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/pagos"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/flPagoPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ibPagoPA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_adelantado" />
+
+                <TextView
+                    android:id="@+id/lblSTB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pagos_adelantado"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ibReimprimir"
+                android:layout_width="@dimen/pagos_icons"
+                android:layout_height="@dimen/pagos_icons"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_reimprimir" />
+
+            <TextView
+                android:id="@+id/lblAddModem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/pagos_reimprimir"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/pagos_text_size"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ibHistorial"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_report" />
+
+                <TextView
+                    android:id="@+id/lblHistorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pagos_historial"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

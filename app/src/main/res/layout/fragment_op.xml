@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.operaciones.tabs.operacionesTab.OpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ibReconexion"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_reconexion" />
+
+                <TextView
+                    android:id="@+id/lblReconexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/operaciones_reconexion"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/flAverias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ibAverias"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_averia" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/operaciones_averias"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ibTraslado"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_traslado" />
+
+                <TextView
+                    android:id="@+id/lblTraslado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/operaciones_traslado"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ibExtension"-->
+<!--                    android:layout_width="@dimen/pagos_icons"-->
+<!--                    android:layout_height="@dimen/pagos_icons"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:src="@drawable/ic_extension" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lblExtension"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/operaciones_extension"-->
+<!--                    android:textColor="@color/secondary_text"-->
+<!--                    android:textSize="@dimen/pagos_text_size"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ibAddSTB"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_stb" />
+
+                <TextView
+                    android:id="@+id/lblSTB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/operaciones_stb"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ibInternet"
+                    android:layout_width="@dimen/pagos_icons"
+                    android:layout_height="@dimen/pagos_icons"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_modem" />
+
+                <TextView
+                    android:id="@+id/lblAddModem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/operaciones_internet"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/pagos_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

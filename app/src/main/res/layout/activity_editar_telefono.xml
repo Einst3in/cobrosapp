@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editarTelefono.EditarTelefonoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblTelEditarTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Telefono"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTelEditarTel">
+
+
+            <TextView
+                android:id="@+id/tvTelEditarTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_label_med"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnTelLlamar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/primary"
+                android:text="LLAMAR"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblTelEditarTel"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutTel">
+
+            <EditText
+                android:id="@+id/etTelEditarTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.8"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintStart_toStartOf="@+id/lblTelEditarTel"
+                app:layout_constraintTop_toBottomOf="@+id/lblTelEditarTel" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/icEditTel"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_label_med">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_label_min" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblCelEditarTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Celular"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout26" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutCel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCelEditarTel">
+
+
+            <TextView
+                android:id="@+id/tvCelEditarTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_label_med"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCelLlamar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/primary"
+                android:text="LLAMAR"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblCelEditarTel"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutCel">
+
+            <EditText
+                android:id="@+id/etCelEditarTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.8"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintStart_toStartOf="@+id/lblCelEditarTel"
+                app:layout_constraintTop_toBottomOf="@+id/lblCelEditarTel" />
+
+            <LinearLayout
+                android:id="@+id/icEditCel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_label_med">
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_label_min" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblOtroTelEditarTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Otro Telefono"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout27" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutOtroTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblOtroTelEditarTel">
+
+
+            <TextView
+                android:id="@+id/tvOtroTelEditarTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_label_med"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOtroTelLlamar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/primary"
+                android:text="LLAMAR"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout29"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblOtroTelEditarTel"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutOtroTel">
+
+            <EditText
+                android:id="@+id/etOtroTelEditarTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.8"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintStart_toStartOf="@+id/lblCelEditarTel"
+                app:layout_constraintTop_toBottomOf="@+id/lblCelEditarTel" />
+
+            <LinearLayout
+                android:id="@+id/icEditOtroTel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_label_med">
+
+                <ImageView
+                    android:id="@+id/ivEditOtroTel"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_label_min" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblEmailEditarTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_label_med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout29" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblEmailEditarTel">
+
+
+            <TextView
+                android:id="@+id/tvEmailEditarTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_label_med"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblEmailEditarTel"
+            app:layout_constraintTop_toBottomOf="@+id/lLayoutEmail">
+
+            <EditText
+                android:id="@+id/etEmailEditarTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.8"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintStart_toStartOf="@+id/lblCelEditarTel"
+                app:layout_constraintTop_toBottomOf="@+id/lblCelEditarTel" />
+
+            <LinearLayout
+                android:id="@+id/icEditEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_label_med">
+
+                <ImageView
+                    android:id="@+id/ivEditEmail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_label_min" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pBarEditarTel"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "423176761545",
+    "firebase_url": "https://cobrostelenord.firebaseio.com",
+    "project_id": "cobrostelenord",
+    "storage_bucket": "cobrostelenord.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423176761545:android:4aec9d0c826b5da80fdd18",
+        "android_client_info": {
+          "package_name": "com.telenord.cobros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW2dKzCUyq68r5OudvuNrS88Ef5axGDLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423176761545:android:60d7cef5c6696fdc0fdd18",
+        "android_client_info": {
+          "package_name": "com.telenord.cobrosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW2dKzCUyq68r5OudvuNrS88Ef5axGDLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423176761545:android:910374296eb239de",
+        "android_client_info": {
+          "package_name": "com.telenord.puntopago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW2dKzCUyq68r5OudvuNrS88Ef5axGDLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423176761545:android:06216f487ffc05c5",
+        "android_client_info": {
+          "package_name": "com.telenord.teleandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423176761545-p8c7gg7r6o6dfocq5tfigr3vcuk2l23k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telenord.teleandroid",
+            "certificate_hash": "e04b85c516df5ffac9031cc7c32e302336d3ce88"
+          }
+        },
+        {
+          "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW2dKzCUyq68r5OudvuNrS88Ef5axGDLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423176761545-mhgbpar1v9d71gptpj3cosk6didk3385.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
